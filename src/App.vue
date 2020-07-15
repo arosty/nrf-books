@@ -47,6 +47,9 @@ h1 {
 h2 {
   font-size: 30px;
 }
+h3 {
+  font-size: 20px;
+}
 #app {
   /* background-image: url("./assets/background.jpg"); */
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
