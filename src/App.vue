@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <Navbar :author="author"/>
+    <!-- <Navbar :author="author"/> -->
     <Header :author="author"/>
     <Author :author="author"/>
     <hr />

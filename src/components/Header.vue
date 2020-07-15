@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-center bottom-two">
+  <div class="row justify-content-center bottom-two top-two">
     <div class="col-6 col-md-8 col-sm-12">
       <h2>Willkommen auf der Webseite von</h2>
       <h1><em>{{ author.name }}</em></h1>
@@ -23,5 +23,13 @@ export default {
 #unicorn {
   width: 150px;
   height: auto;
+}
+.top-two {
+  padding-top: 5vh;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
 }
 </style>
