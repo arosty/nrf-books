@@ -32,6 +32,52 @@ export default {
         + 'Mit zwei Kindern kehrt die junge Familie nach Europa zurück. Er lebt nun '
         + 'mit seiner Frau in Lenggries, Bayern.',
       },
+      books: [
+        {
+          title: 'Odyssee einer tapferen Frau',
+          category: 'Zeitgeschichte',
+          description: 'Verena, geboren noch zu Kaisers Zeiten, wuchs frühzeitig als '
+          + 'Vollwaise in herrschaftlicher Umgebung auf. Der erste wie zweite Weltkrieg und'
+          + ' die hiermit verbundenen Erlebnisse veränderten ihr Leben und das ihrer Kinder.'
+          + '\nDer Roman ist nicht frei erfunden, sondern basiert auf tatsächlichen '
+          + 'Erlebnissen, zumeist aus dem Verwandten- und Bekanntenkreis des Autors. Sie '
+          + 'spiegeln sich in Verena mit all ihren Freuden, Überlebenskämpfen, Sehnsüchten '
+          + 'und Erfolgen.',
+          bookmundoUrl: '#',
+          amazonUrl: '#',
+        },
+        {
+          title: 'Jenseits der goldenen Wiege',
+          category: 'Autobiographie',
+          description: 'Als Kind mit strengen Schlossmanieren aufgewachsen. Nach dem '
+          + 'zweiten Weltkrieg aus der Heimat vertrieben, in einem spartanischen Internat'
+          + ' ‚zwischengelagert‘. Mit den Eltern nach Südamerika emigriert und ausgerissen'
+          + ' als Jugendlicher in den chilenischen Urwald. Schließlich als Ehemann und Vater'
+          + ' auf Mallorca gelandet, im Massentourismus seine Ehe riskierend, um die Existenz'
+          + ' gekämpft.',
+          bookmundoUrl: '#',
+          amazonUrl: '#',
+        },
+        {
+          title: 'Das unsichtbare Paradies',
+          category: 'Beziehungsdrama',
+          description: 'Ein durchtriebenes Mädchen fängt einen Studenten ein. Er schafft es in'
+          + ' die Chefetage und wird mit einem heiklen Auftrag nach Brasilien geschickt. Wegen'
+          + ' dieser Frau muss er mit seiner Familie überstürzt das Land verlassen. Er taucht '
+          + 'unter und hofft seinen Seelenfrieden in Oberbayern zu finden. ',
+          bookmundoUrl: '#',
+          amazonUrl: '#',
+        },
+        {
+          title: 'Begegnung in der Sierra Nevada',
+          category: 'Dramatischer Liebesroman',
+          description: 'Eine sympathische Spanierin ist als Unternehmerin in Hamburg tätig. Zwei'
+          + ' traumhafte Männer und ein liebenswertes Mädchen, die eine neue Mutter sucht, sind '
+          + 'ihr Problem.',
+          bookmundoUrl: '#',
+          amazonUrl: '#',
+        },
+      ],
     };
   },
 };
