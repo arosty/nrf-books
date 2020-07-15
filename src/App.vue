@@ -3,6 +3,7 @@
     <Navbar :author="author"/>
     <Header :author="author"/>
     <Author :author="author"/>
+    <hr />
     <div v-for="book in books" :key="book.name">
       <Book :book="book"/>
     </div>
@@ -62,7 +63,7 @@ export default {
           + ' als Jugendlicher in den chilenischen Urwald. Schließlich als Ehemann und Vater'
           + ' auf Mallorca gelandet, im Massentourismus seine Ehe riskierend, um die Existenz'
           + ' gekämpft.',
-          bookmundoUrl: '#',
+          bookmundoUrl: 'https://publish.bookmundo.de/shop/index.php/jenseits-der-goldenen-wiege-122471-publish-bookmundo-de.html',
           amazonUrl: '#',
         },
         {
@@ -73,7 +74,7 @@ export default {
           + ' die Chefetage und wird mit einem heiklen Auftrag nach Brasilien geschickt. Wegen'
           + ' dieser Frau muss er mit seiner Familie überstürzt das Land verlassen. Er taucht '
           + 'unter und hofft seinen Seelenfrieden in Oberbayern zu finden. ',
-          bookmundoUrl: '#',
+          bookmundoUrl: 'https://publish.bookmundo.de/shop/index.php/catalog/product/view/id/423548/s/das-unsichtbare-paradies-roman-176272-publish-bookmundo-de/',
           amazonUrl: '#',
         },
         {
@@ -83,7 +84,7 @@ export default {
           description: 'Eine sympathische Spanierin ist als Unternehmerin in Hamburg tätig. Zwei'
           + ' traumhafte Männer und ein liebenswertes Mädchen, die eine neue Mutter sucht, sind '
           + 'ihr Problem.',
-          bookmundoUrl: '#',
+          bookmundoUrl: 'https://publish.bookmundo.de/shop/index.php/begegnung-in-der-sierra-nevada-123089-publish-bookmundo-de.html',
           amazonUrl: '#',
         },
       ],

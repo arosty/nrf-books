@@ -6,6 +6,10 @@
       <h4>{{ book.category }}</h4>
       <p>{{ book.description }}</p>
     </div>
+    <div class="buy-icons">
+      <a :href="book.bookmundoUrl"><img :src="bookmundoImage" class="buy-icon" /></a>
+      <a :href="book.amazonUrl"><img :src="amazonImage" class="buy-icon" /></a>
+    </div>
   </div>
 </template>
 
@@ -18,6 +22,12 @@ export default {
       required: true,
     },
   },
+  data() {
+    return {
+      bookmundoImage: require('@/assets/bookmundo.png'),
+      amazonImage: require('@/assets/amazon.svg'),
+    };
+  }
 };
 </script>
 
@@ -32,11 +42,36 @@ export default {
   display: flex;
   align-items: center;
   transition: 0.3s;
+  position: relative;
+}
+
+.buy-icons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.buy-icon {
+  height: 18px !important;
+  margin-left: 10px;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.buy-icon:hover {
+  -webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .card-product img {
   height: 100%;
-  width: 170px;
+  width: auto;
   object-fit: cover;
   border-radius: 1px;
   /* -webkit-transform: scale(1);
@@ -52,7 +87,8 @@ export default {
 	transform: scale(1.2);
 } */
 
-.card-product p {
+/*.card-product */
+p {
   font-size: 14px;
   line-height: 1.4;
   opacity: .7;
