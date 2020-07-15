@@ -3,6 +3,9 @@
     <Navbar :author="author"/>
     <Header :author="author"/>
     <Author :author="author"/>
+    <div v-for="book in books" :key="book.name">
+      <Book :book="book"/>
+    </div>
   </div>
 </template>
 
@@ -10,6 +13,7 @@
 import Navbar from './components/Navbar.vue';
 import Header from './components/Header.vue';
 import Author from './components/Author.vue';
+import Book from './components/Book.vue';
 
 export default {
   name: 'App',
@@ -17,6 +21,7 @@ export default {
     Navbar,
     Header,
     Author,
+    Book,
   },
   data() {
     return {
@@ -36,6 +41,7 @@ export default {
         {
           title: 'Odyssee einer tapferen Frau',
           category: 'Zeitgeschichte',
+          image: require('@/assets/odyssee.jpg'),
           description: 'Verena, geboren noch zu Kaisers Zeiten, wuchs frühzeitig als '
           + 'Vollwaise in herrschaftlicher Umgebung auf. Der erste wie zweite Weltkrieg und'
           + ' die hiermit verbundenen Erlebnisse veränderten ihr Leben und das ihrer Kinder.'
@@ -49,6 +55,7 @@ export default {
         {
           title: 'Jenseits der goldenen Wiege',
           category: 'Autobiographie',
+          image: require('@/assets/wiege.jpg'),
           description: 'Als Kind mit strengen Schlossmanieren aufgewachsen. Nach dem '
           + 'zweiten Weltkrieg aus der Heimat vertrieben, in einem spartanischen Internat'
           + ' ‚zwischengelagert‘. Mit den Eltern nach Südamerika emigriert und ausgerissen'
@@ -61,6 +68,7 @@ export default {
         {
           title: 'Das unsichtbare Paradies',
           category: 'Beziehungsdrama',
+          image: require('@/assets/paradies.jpg'),
           description: 'Ein durchtriebenes Mädchen fängt einen Studenten ein. Er schafft es in'
           + ' die Chefetage und wird mit einem heiklen Auftrag nach Brasilien geschickt. Wegen'
           + ' dieser Frau muss er mit seiner Familie überstürzt das Land verlassen. Er taucht '
@@ -71,6 +79,7 @@ export default {
         {
           title: 'Begegnung in der Sierra Nevada',
           category: 'Dramatischer Liebesroman',
+          image: require('@/assets/begegnung.jpg'),
           description: 'Eine sympathische Spanierin ist als Unternehmerin in Hamburg tätig. Zwei'
           + ' traumhafte Männer und ein liebenswertes Mädchen, die eine neue Mutter sucht, sind '
           + 'ihr Problem.',
