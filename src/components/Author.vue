@@ -58,12 +58,6 @@ export default {
 	transform: scale(1.2);
 } */
 
-/* .card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-} */
-
 .card-product p {
   font-size: 14px;
   line-height: 1.4;

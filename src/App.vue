@@ -96,6 +96,10 @@ h2 {
 h3 {
   font-size: 20px;
 }
+h4 {
+  font-size: 17px;
+  color: grey;
+}
 #app {
   /* background-image: url("./assets/background.jpg"); */
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
