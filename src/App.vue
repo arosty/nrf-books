@@ -118,6 +118,7 @@ h4 {
   text-align: left;
   color: #2c3e50;
   /* margin-top: 60px; */
+  background-color: '#f1f1f1';
 }
 #unicorn {
   width: 150px;

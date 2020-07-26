@@ -74,18 +74,18 @@ export default {
   width: auto;
   object-fit: cover;
   border-radius: 1px;
-  /* -webkit-transform: scale(1);
+  -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
   overflow: hidden;
-  flex-shrink: 0; */
+  flex-shrink: 0;
 }
 
-/* .card-product:hover img {
+.card-product:hover img {
   -webkit-transform: scale(1.2);
 	transform: scale(1.2);
-} */
+}
 
 /*.card-product */
 p {
@@ -102,5 +102,8 @@ p {
 
 .card-product .card-product-infos {
   padding: 16px;
+  background: white;
+  z-index: 1;
+  height: 140px;
 }
 </style>
