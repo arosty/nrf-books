@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-content-center bottom-two top-two">
-    <div class="col-6 col-md-8 col-sm-12">
+    <div class="col-12 col-md-8 col-lg-6">
       <h2>Willkommen auf der Webseite von</h2>
       <h1><em>{{ author.name }}</em></h1>
     </div>
@@ -29,7 +29,7 @@ export default {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background: white;
 }
 </style>

@@ -5,7 +5,7 @@
       <h3>Der Autor</h3>
       <p>{{ author.bio }}</p>
     </div>
-    <img :src="author.image" class="author-image" />
+    <img :src="author.image" class="author-image product-image" />
   </div>
 </div>
 </template>

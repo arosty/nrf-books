@@ -1,9 +1,9 @@
 <template>
   <div class="card-product bottom-two"> <!--:style="{ backgroundImage: 'url(' + backgroundUrl + ')' }">-->
-    <img :src="book.image" />
+    <img :src="book.image" class="product-image" />
     <div class="card-product-infos">
       <h3>{{ book.title }}</h3>
-      <h4>{{ book.category }}</h4>
+      <h4>{{ book.category }} <a :href="book.bookmundoUrl">Jetzt bestellen</a></h4>
       <p>{{ book.description }}</p>
     </div>
     <div class="buy-icons">
@@ -34,6 +34,7 @@ export default {
 <style>
 .card-product {
   overflow: hidden;
+  overflow-y: hidden;
   height: 140px;
   background: white;
   /* background-image: './assets/background.jpg'; */
@@ -62,6 +63,7 @@ export default {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+  z-index: 2;
 }
 
 .buy-icon:hover {
@@ -77,15 +79,16 @@ export default {
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
   overflow: hidden;
   flex-shrink: 0;
 }
 
-.card-product:hover img {
+.card-product:hover .product-image {
   -webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
+
 
 /*.card-product */
 p {
@@ -106,4 +109,19 @@ p {
   z-index: 1;
   height: 140px;
 }
+
+.card-product-infos {
+  overflow-y: scroll;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.card-product-infos::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card-product-infos {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
 </style>
