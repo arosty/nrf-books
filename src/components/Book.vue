@@ -84,10 +84,10 @@ export default {
   flex-shrink: 0;
 }
 
-.card-product:hover .product-image {
+/* .card-product:hover .product-image {
   -webkit-transform: scale(1.2);
 	transform: scale(1.2);
-}
+} */
 
 
 /*.card-product */
