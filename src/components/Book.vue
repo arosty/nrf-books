@@ -53,6 +53,7 @@ export default {
   position: absolute;
   top: 16px;
   right: 16px;
+  z-index: 9;
 }
 
 .buy-icon {
